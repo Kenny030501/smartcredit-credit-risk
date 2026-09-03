@@ -1,0 +1,54 @@
+{
+  "model": "XGBClassifierTuned",
+  "trained_at_utc": "2026-09-02T00:16:50.836847+00:00",
+  "database": "data/interim/smartcredit.duckdb",
+  "random_state": 42,
+  "validation_size": 0.2,
+  "tuning_sample_size": 120000,
+  "cv_folds": 3,
+  "candidate_count": 10,
+  "selected_params": {
+    "learning_rate": 0.03,
+    "max_depth": 4,
+    "min_child_weight": 20,
+    "subsample": 0.9,
+    "colsample_bytree": 0.7,
+    "reg_alpha": 1.0,
+    "reg_lambda": 20.0,
+    "gamma": 0.0
+  },
+  "selected_cv_auc_mean": 0.7757984665481138,
+  "selected_cv_auc_std": 0.003974239806328632,
+  "best_iterations": 1181,
+  "outer_fit_seconds": 83.8788748750012,
+  "full_training_rows": 307511,
+  "test_rows": 48744,
+  "sklearn_version": "1.9.0",
+  "xgboost_version": "3.4.1",
+  "openmp_runtime": "/opt/anaconda3/lib/libomp.dylib",
+  "metrics": {
+    "roc_auc": 0.785453663992067,
+    "pr_auc": 0.28609102783753304,
+    "brier_score": 0.06575541198253632,
+    "log_loss": 0.23708119988441467,
+    "ks": 0.4314187639914721,
+    "ks_threshold": 0.0822615921497345,
+    "threshold_0_5": {
+      "precision": 0.5777262180974478,
+      "recall": 0.050151057401812686,
+      "f1": 0.09229058561897702,
+      "balanced_accuracy": 0.5234659917523053,
+      "confusion_matrix": {
+        "true_negative": 56356,
+        "false_positive": 182,
+        "false_negative": 4716,
+        "true_positive": 249
+      }
+    },
+    "validation_positive_rate": 0.08072776937710356,
+    "train_rows": 221407,
+    "early_stopping_rows": 24601,
+    "validation_rows": 61503,
+    "decile_calibration_error": 0.0024397409513971665
+  }
+}

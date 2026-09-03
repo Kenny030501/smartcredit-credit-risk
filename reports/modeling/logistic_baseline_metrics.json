@@ -1,0 +1,37 @@
+{
+  "model": "LogisticRegression",
+  "trained_at_utc": "2026-09-01T15:49:13.685769+00:00",
+  "database": "data/interim/smartcredit.duckdb",
+  "random_state": 42,
+  "validation_size": 0.2,
+  "full_training_rows": 307511,
+  "test_rows": 48744,
+  "numeric_feature_count": 179,
+  "categorical_feature_count": 16,
+  "transformed_feature_count": 462,
+  "sklearn_version": "1.9.0",
+  "metrics": {
+    "roc_auc": 0.7726682286992712,
+    "pr_auc": 0.2641262400734696,
+    "brier_score": 0.06680123507976532,
+    "log_loss": 0.2415853887796402,
+    "ks": 0.40868294980922915,
+    "ks_threshold": 0.0780877023935318,
+    "threshold_0_5": {
+      "precision": 0.5893536121673004,
+      "recall": 0.03121852970795569,
+      "f1": 0.05929609793420046,
+      "balanced_accuracy": 0.5146541550163466,
+      "confusion_matrix": {
+        "true_negative": 56430,
+        "false_positive": 108,
+        "false_negative": 4810,
+        "true_positive": 155
+      }
+    },
+    "validation_positive_rate": 0.08072776937710356,
+    "train_rows": 246008,
+    "validation_rows": 61503,
+    "decile_calibration_error": 0.0023045806628245553
+  }
+}

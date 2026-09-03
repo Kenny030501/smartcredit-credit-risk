@@ -1,0 +1,146 @@
+{
+  "created_at_utc": "2026-09-02T18:06:07.286349+00:00",
+  "base_model": "XGBClassifierTuned",
+  "random_state": 42,
+  "oof_folds": 3,
+  "calibration_selection_folds": 5,
+  "development_rows": 246008,
+  "outer_validation_rows": 61503,
+  "selected_method": "raw",
+  "selection_metrics": {
+    "raw": {
+      "roc_auc": 0.7805916643346019,
+      "pr_auc": 0.2701875225025681,
+      "brier_score": 0.0664142565839502,
+      "log_loss": 0.23933503887726906,
+      "ks": 0.42357172065362786,
+      "ks_threshold": 0.07548750936985016,
+      "threshold_0_5": {
+        "precision": 0.5576519916142557,
+        "recall": 0.04018126888217523,
+        "f1": 0.07496125123291532,
+        "balanced_accuracy": 0.5186911084669468,
+        "confusion_matrix": {
+          "true_negative": 225515,
+          "false_positive": 633,
+          "false_negative": 19062,
+          "true_positive": 798
+        }
+      },
+      "decile_calibration_error": 0.0028636892287908994
+    },
+    "platt": {
+      "roc_auc": 0.78057102776727,
+      "pr_auc": 0.2700884971250588,
+      "brier_score": 0.06641702491467728,
+      "log_loss": 0.2393427451027893,
+      "ks": 0.42351381313426967,
+      "ks_threshold": 0.07513905012176483,
+      "threshold_0_5": {
+        "precision": 0.5532786885245902,
+        "recall": 0.04078549848942598,
+        "f1": 0.07597073719752391,
+        "balanced_accuracy": 0.5189467934989181,
+        "confusion_matrix": {
+          "true_negative": 225494,
+          "false_positive": 654,
+          "false_negative": 19050,
+          "true_positive": 810
+        }
+      },
+      "decile_calibration_error": 0.0028834088946573973
+    },
+    "isotonic": {
+      "roc_auc": 0.7800356782280605,
+      "pr_auc": 0.26745046999570043,
+      "brier_score": 0.06641333844852024,
+      "log_loss": 0.2395833092159123,
+      "ks": 0.4231743282981579,
+      "ks_threshold": 0.07650765076507653,
+      "threshold_0_5": {
+        "precision": 0.5526496902959395,
+        "recall": 0.04043303121852971,
+        "f1": 0.07535307089569745,
+        "balanced_accuracy": 0.5187794036294994,
+        "confusion_matrix": {
+          "true_negative": 225498,
+          "false_positive": 650,
+          "false_negative": 19057,
+          "true_positive": 803
+        }
+      },
+      "decile_calibration_error": 0.0006229909358302137
+    }
+  },
+  "calibration_metrics": {
+    "raw": {
+      "roc_auc": 0.785453663992067,
+      "pr_auc": 0.28609102783753304,
+      "brier_score": 0.06575541538328387,
+      "log_loss": 0.2370812035646523,
+      "ks": 0.4314187639914721,
+      "ks_threshold": 0.0822615921497345,
+      "threshold_0_5": {
+        "precision": 0.5777262180974478,
+        "recall": 0.050151057401812686,
+        "f1": 0.09229058561897702,
+        "balanced_accuracy": 0.5234659917523053,
+        "confusion_matrix": {
+          "true_negative": 56356,
+          "false_positive": 182,
+          "false_negative": 4716,
+          "true_positive": 249
+        }
+      },
+      "decile_calibration_error": 0.002439740534714996
+    },
+    "platt": {
+      "roc_auc": 0.785453663992067,
+      "pr_auc": 0.28609102783753304,
+      "brier_score": 0.06575419645573616,
+      "log_loss": 0.23708003675619985,
+      "ks": 0.4314187639914721,
+      "ks_threshold": 0.08287160835141698,
+      "threshold_0_5": {
+        "precision": 0.5701559020044543,
+        "recall": 0.051560926485397784,
+        "f1": 0.09456963428149243,
+        "balanced_accuracy": 0.5240736465884133,
+        "confusion_matrix": {
+          "true_negative": 56345,
+          "false_positive": 193,
+          "false_negative": 4709,
+          "true_positive": 256
+        }
+      },
+      "decile_calibration_error": 0.002205430335272744
+    },
+    "isotonic": {
+      "roc_auc": 0.785323938124728,
+      "pr_auc": 0.2788719845861266,
+      "brier_score": 0.06580875013724703,
+      "log_loss": 0.23722929476262497,
+      "ks": 0.43030013020144514,
+      "ks_threshold": 0.08628461043142305,
+      "threshold_0_5": {
+        "precision": 0.5857519788918206,
+        "recall": 0.04471299093655589,
+        "f1": 0.08308383233532934,
+        "balanced_accuracy": 0.5209680487598695,
+        "confusion_matrix": {
+          "true_negative": 56381,
+          "false_positive": 157,
+          "false_negative": 4743,
+          "true_positive": 222
+        }
+      },
+      "decile_calibration_error": 0.0028351508007325057
+    }
+  },
+  "economic_scenario": {
+    "performing_margin": 0.08,
+    "loss_given_default": 0.5,
+    "normalized_ead": 1.0
+  },
+  "openmp_runtime": "/opt/anaconda3/lib/libomp.dylib"
+}

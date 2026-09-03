@@ -1,0 +1,10 @@
+table,file,rows,columns,size_mb
+application_train,application_train.csv,307511,122,158.44
+application_test,application_test.csv,48744,121,25.34
+bureau,bureau.csv,1716428,17,162.14
+bureau_balance,bureau_balance.csv,27299925,3,358.19
+previous_application,previous_application.csv,1670214,37,386.21
+pos_cash_balance,POS_CASH_balance.csv,10001358,8,374.51
+credit_card_balance,credit_card_balance.csv,3840312,23,404.91
+installments_payments,installments_payments.csv,13605401,8,689.62
+sample_submission,sample_submission.csv,48744,2,0.51

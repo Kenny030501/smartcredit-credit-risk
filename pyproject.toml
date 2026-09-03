@@ -1,0 +1,38 @@
+[project]
+name = "smartcredit"
+version = "0.1.0"
+description = "Home Credit default-risk modeling and credit-policy simulation"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "duckdb",
+  "ipykernel",
+  "jupyterlab",
+  "matplotlib",
+  "pandas",
+  "plotly",
+  "polars",
+  "pyarrow",
+  "scikit-learn",
+  "seaborn",
+  "streamlit",
+  "xgboost>=3.2.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+  "pytest",
+  "ruff",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/smartcredit"]

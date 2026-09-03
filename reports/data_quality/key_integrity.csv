@@ -1,0 +1,13 @@
+check,violations
+application_train duplicate SK_ID_CURR,0
+application_test duplicate SK_ID_CURR,0
+train-test overlapping SK_ID_CURR,0
+bureau orphan SK_ID_CURR,0
+bureau_balance rows without bureau parent,3120184
+previous_application orphan SK_ID_CURR,0
+POS_CASH rows without previous_application parent,340561
+POS_CASH rows without application parent,0
+credit_card rows without previous_application parent,1082816
+credit_card rows without application parent,0
+installments rows without previous_application parent,1250826
+installments rows without application parent,0
